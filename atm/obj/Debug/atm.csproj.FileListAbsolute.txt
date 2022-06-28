@@ -1,0 +1,14 @@
+C:\Users\2190785\Documents\gitrepo\atm_management\atm\bin\Debug\atm.exe.config
+C:\Users\2190785\Documents\gitrepo\atm_management\atm\bin\Debug\atm.exe
+C:\Users\2190785\Documents\gitrepo\atm_management\atm\bin\Debug\atm.pdb
+C:\Users\2190785\Documents\gitrepo\atm_management\atm\obj\Debug\atm.csproj.AssemblyReference.cache
+C:\Users\2190785\Documents\gitrepo\atm_management\atm\obj\Debug\atm.csproj.SuggestedBindingRedirects.cache
+C:\Users\2190785\Documents\gitrepo\atm_management\atm\obj\Debug\atm.Properties.Resources.resources
+C:\Users\2190785\Documents\gitrepo\atm_management\atm\obj\Debug\atm.csproj.GenerateResource.cache
+C:\Users\2190785\Documents\gitrepo\atm_management\atm\obj\Debug\atm.csproj.CoreCompileInputs.cache
+C:\Users\2190785\Documents\gitrepo\atm_management\atm\obj\Debug\atm.exe
+C:\Users\2190785\Documents\gitrepo\atm_management\atm\obj\Debug\atm.pdb
+C:\Users\2190785\Documents\gitrepo\atm_management\atm\bin\Debug\atm_db.mdf
+C:\Users\2190785\Documents\gitrepo\atm_management\atm\bin\Debug\atm_db_log.ldf
+C:\Users\2190785\Documents\gitrepo\atm_management\atm\obj\Debug\atm.mainpage.resources
+C:\Users\2190785\Documents\gitrepo\atm_management\atm\obj\Debug\atm.RegisterPage.resources
