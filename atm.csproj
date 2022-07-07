@@ -198,6 +198,18 @@
     <Compile Include="cash_machine_operations\FastCashForm.Designer.cs">
       <DependentUpon>FastCashForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="cash_machine_operations\TransactionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cash_machine_operations\TransactionForm.Designer.cs">
+      <DependentUpon>TransactionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cash_machine_operations\TransferForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cash_machine_operations\TransferForm.Designer.cs">
+      <DependentUpon>TransferForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="cash_machine_operations\WithdrawForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,6 +246,12 @@
     <EmbeddedResource Include="cash_machine_operations\FastCashForm.resx">
       <DependentUpon>FastCashForm.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cash_machine_operations\TransactionForm.resx">
+      <DependentUpon>TransactionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cash_machine_operations\TransferForm.resx">
+      <DependentUpon>TransferForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cash_machine_operations\WithdrawForm.resx">
       <DependentUpon>WithdrawForm.cs</DependentUpon>

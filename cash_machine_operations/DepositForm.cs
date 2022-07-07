@@ -28,40 +28,48 @@ namespace atm.cash_machine_operations
 
         private void deposit_Click(object sender, EventArgs e)
         {
-            if (int.Parse(amountTextBox.Text) % 5 != 0)
+            DialogResult dialogResult = MessageBox.Show("Do you want to deposit" +amountTextBox.Text+"€", "Deposit",MessageBoxButtons.YesNo);
+            if(dialogResult == DialogResult.Yes)
             {
-                MessageBox.Show("Incorrect amount");
-            }
-            else
-            {
-                try
+                if (int.Parse(amountTextBox.Text) % 5 != 0)
                 {
-                    String query = "Update Users set balance = balance + @balance where username = @username;Select balance from users where username = @username ";
-                    SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
-                    sqlCommand.Parameters.AddWithValue("@balance", decimal.Parse(amountTextBox.Text));
-                    sqlCommand.Parameters.AddWithValue("@username", User.Username);
-                    sqlConnection.Open();
-                    User.Balance = decimal.Parse(sqlCommand.ExecuteScalar().ToString());
-                    MessageBox.Show(amountTextBox.Text + "€ were deposited!");
+                    MessageBox.Show("Incorrect amount");
                 }
-                catch (SqlException sqlException)
-            {
-                MessageBox.Show(sqlException.ToString());
+                else
+                {
+                    try
+                    {
+                        String query = "Update Users set balance = balance + @balance where username = @username;Select balance from users where username = @username ";
+                        SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                        sqlCommand.Parameters.AddWithValue("@balance", decimal.Parse(amountTextBox.Text));
+                        sqlCommand.Parameters.AddWithValue("@username", User.Username);
+                        sqlConnection.Open();
+                        User.Balance = decimal.Parse(sqlCommand.ExecuteScalar().ToString());
+                        MessageBox.Show(amountTextBox.Text + "€ were deposited!");
+                    }
+                    catch (SqlException sqlException)
+                    {
+                        MessageBox.Show(sqlException.ToString());
+                    }
+                    catch (ArgumentNullException ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    sqlConnection.Close();
+                }
             }
-            catch (ArgumentNullException ex)
+            else if(dialogResult == DialogResult.No)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Deposit canceled");
             }
-            sqlConnection.Close();
         }
-    }
 
-    private void amountTextBox_KeyPress(object sender, KeyPressEventArgs e)
-    {
-        if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+        private void amountTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = true;
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
         }
     }
-}
 }

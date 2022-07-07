@@ -144,3 +144,5 @@ C:\Users\2190785\Documents\gitrepo\atm_management\bin\Debug\ru\Microsoft.Data.Sq
 C:\Users\2190785\Documents\gitrepo\atm_management\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\2190785\Documents\gitrepo\atm_management\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 C:\Users\2190785\Documents\gitrepo\atm_management\obj\Debug\atm.csproj.CopyComplete
+C:\Users\2190785\Documents\gitrepo\atm_management\obj\Debug\atm.cash_machine_operations.TransactionForm.resources
+C:\Users\2190785\Documents\gitrepo\atm_management\obj\Debug\atm.cash_machine_operations.TransferForm.resources

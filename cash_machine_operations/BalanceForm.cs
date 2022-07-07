@@ -50,9 +50,13 @@ namespace atm.cash_machine_operations
                 MessageBox.Show(sqlException.Message);
             }
             sqlConnection.Close();
-           /* nameLabel.Text = "1";
-            accountNumberLabel.Text = "1";
-            balanceLabel.Text = MainForm.balance.ToString();*/
+        }
+        private void CheckEnterLogin(object sender, System.Windows.Forms.KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                backBtn_Click(sender, e);
+            }
         }
     }
 }

@@ -13,13 +13,14 @@ namespace atm
 {
     public partial class LoginForm : Form
     {
-        static string connectionstring;
+        //static string connectionstring;
         public static SqlConnection sqlConnection;
+        private static string connectionString;
         public LoginForm()
         {
             InitializeComponent();
-            connectionstring = System.IO.File.ReadAllText(@"C:\Users\2190785\Documents\gitrepo\connectionstring.txt");
-            sqlConnection = new SqlConnection(connectionstring);
+            connectionString = System.IO.File.ReadAllText(@"C:\Users\2190785\Documents\gitrepo\connectionstring.txt");
+            sqlConnection = new SqlConnection(connectionString);
             this.UsernameTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(CheckEnterLogin);
             this.passwordTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(CheckEnterLogin);
         }

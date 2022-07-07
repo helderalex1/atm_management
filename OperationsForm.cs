@@ -49,10 +49,10 @@ namespace atm
                     form = new FastCashForm();
                     break;
                 case "transactionBtn":
-
+                    form = new TransactionForm();
                     break;
                 case "transferBtn":
-
+                    form=new TransferForm();
                     break;
                 case "balanceBtn":
                     form = new BalanceForm();

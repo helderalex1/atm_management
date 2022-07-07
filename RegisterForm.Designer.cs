@@ -180,6 +180,7 @@
             this.Controls.Add(this.registNameTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegisterPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterPage";
             this.ResumeLayout(false);
             this.PerformLayout();
